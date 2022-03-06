@@ -1,26 +1,68 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <NavBar />
+  <div class="container">
+    <SideBar />
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NavBar from "./components/Nav-Bar.vue";
+import SideBar from "./components/Side-Bar.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    NavBar,
+    SideBar,
+  },
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style lang="scss">
+@import "@/assets/_shared.scss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-family;
+  button {
+    color: #fff;
+    background: $blue;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 7px;
+    margin-top: 0.5rem;
+    cursor: pointer;
+  }
+  #app {
+    width: 55%;
+    margin: auto;
+    height: 100vh;
+
+    .container {
+      display: flex;
+    }
+  }
+}
+@media only screen and (max-width: 1500px) {
+  #app {
+    width: 90%;
+
+    .container {
+      display: flex;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #app {
+    width: 100%;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 }
 </style>
