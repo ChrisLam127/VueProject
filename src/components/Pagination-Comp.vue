@@ -1,19 +1,16 @@
 <template>
   <div class="pagination">
-    <button class="prev">Previous</button>
+    <span class="prev">Previous</span>
     <span class="middle">1</span>
     <span class="middle">...</span>
     <span class="middle">3</span>
     <span class="middle">4</span>
     <span class="middle active">5</span>
-    <span class="middle">12</span>
-    <span class="middle">13</span>
-    <span class="middle">14</span>
     <span class="middle">15</span>
     <span class="middle">16</span>
     <span class="middle">...</span>
     <span class="middle">26</span>
-    <button class="prev">Next</button>
+    <span class="prev">Next</span>
   </div>
 </template>
 
@@ -30,6 +27,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
 
   span {
     margin: 0 0.5rem;
@@ -40,7 +38,8 @@ export default {
     justify-content: center;
     align-items: center;
     text-align: center;
-    &:active {
+    cursor: pointer;
+    &.active {
       background: $blue;
     }
   }

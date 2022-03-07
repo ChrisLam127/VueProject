@@ -49,7 +49,7 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 3px solid #ccc;
+  border-bottom: 2px solid #bbb;
 
   .navbar-left {
     flex: 70%;
@@ -65,6 +65,7 @@ export default {
     .icon {
       position: relative;
       font-size: 18px;
+      color: #383838;
 
       span {
         width: 8px;

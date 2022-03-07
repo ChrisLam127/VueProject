@@ -96,11 +96,13 @@ export default {
   flex: 5%;
   display: flex;
   align-items: center;
-  background: rgba(218, 218, 216, 0.582);
+  // background: rgba(218, 218, 216, 0.582);
+  background: #dcdcdc;
   border: 1px solid #ccc;
   width: 100%;
   padding: 1rem 1.5rem;
   div {
+    transition: all 0.3s ease;
     h3 {
       font-size: 14px;
       color: $blue;
@@ -124,6 +126,12 @@ export default {
     &.active {
       border: 1px solid $blue;
       background: rgba(166, 184, 233, 0.4);
+    }
+
+    &:hover {
+      box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.45);
+      -webkit-box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.45);
+      -moz-box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.45);
     }
   }
 }

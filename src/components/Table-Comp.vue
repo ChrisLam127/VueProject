@@ -95,6 +95,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/assets/_shared.scss";
+
 .history {
   flex: 40%;
   background: rgba(218, 218, 216, 0.582);

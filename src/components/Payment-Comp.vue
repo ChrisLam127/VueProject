@@ -94,6 +94,10 @@ export default {
     background: #fff;
     border-radius: 10px;
 
+    box-shadow: 1px 1px 15px -4px rgba(0, 0, 0, 0.45);
+    -webkit-box-shadow: 1px 1px 15px -4px rgba(0, 0, 0, 0.45);
+    -moz-box-shadow: 1px 1px 15px -4px rgba(0, 0, 0, 0.45);
+
     .left-title {
       display: flex;
       flex-direction: column;
@@ -139,6 +143,7 @@ export default {
           margin-left: 1rem;
           border-radius: 10px;
           height: 200px;
+          border: 1px solid rgba(209, 209, 209, 0.9);
 
           h5 {
             font-size: 12px;
@@ -178,6 +183,7 @@ export default {
           margin-left: 0.5rem;
           margin-right: 1rem;
           border-radius: 10px;
+          border: 1px solid rgba(209, 209, 209, 0.9);
 
           h5 {
             font-size: 12px;
@@ -213,6 +219,10 @@ export default {
     background: #fff;
     margin-left: 1rem;
     border-radius: 10px;
+
+    box-shadow: 1px 1px 15px -4px rgba(0, 0, 0, 0.45);
+    -webkit-box-shadow: 1px 1px 15px -4px rgba(0, 0, 0, 0.45);
+    -moz-box-shadow: 1px 1px 15px -4px rgba(0, 0, 0, 0.45);
 
     .listTitle {
       display: flex;

@@ -7,6 +7,7 @@
     <AccountComp />
     <PaymentComp />
     <TableComp />
+    <PaginationComp />
   </section>
 </template>
 
@@ -14,9 +15,10 @@
 import TableComp from "@/components/Table-Comp.vue";
 import PaymentComp from "@/components/Payment-Comp.vue";
 import AccountComp from "../components/Account-Comp.vue";
+import PaginationComp from "@/components/Pagination-Comp.vue";
 export default {
   name: "Billing-Page",
-  components: { TableComp, PaymentComp, AccountComp },
+  components: { TableComp, PaymentComp, AccountComp, PaginationComp },
   data() {
     return {};
   },
